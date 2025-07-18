@@ -14,5 +14,10 @@
     "astro": "^5.11.1",
     "astro-navbar": "^2.4.0",
     "tailwindcss": "^4.1.11"
+  },
+  "overrides": {
+    "@lloydjatkinson/astro-snipcart": {
+      "astro": "^5.11.1"
+    }
   }
 }
