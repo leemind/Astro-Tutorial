@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import { Image } from 'astro:assets';
+import Logo from '../images/LogoNoBorder100.png';
 import {
   Astronav,
   MenuItems,
@@ -26,7 +28,7 @@ import {
       <header class="lg:flex justify-between p-5 gap-5 mx-auto container">
         <Astronav closeOnClick>
       <div class="flex w-full lg:w-auto justify-between">
-            <a class="flex items-center" href="/"><img src="/src/images/LogoNoBorder100.png" class="w-10">Rubble Systems Ltd</a>
+            <a class="flex items-center" href="/"><Image src={Logo} alt="Rubble Logo" width=40 />&nbsp; Rubble Systems Ltd</a>
             <div class="block lg:hidden">
               <MenuIcon class="w-4 h-4 text-gray-800" />
             </div>
