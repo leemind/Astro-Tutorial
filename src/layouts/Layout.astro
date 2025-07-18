@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
-import { Image } from 'astro:assets';
-import Logo from '../images/LogoNoBorder100.png';
+import { Image } from "astro:assets";
+import Logo from "../images/LogoNoBorder100.png";
 import {
   Astronav,
   MenuItems,
@@ -11,6 +11,7 @@ import {
   DropdownSubmenu,
   StickyHeader,
 } from "astro-navbar";
+
 ---
 
 <html lang="en">
@@ -27,14 +28,19 @@ import {
     >
       <header class="lg:flex justify-between p-5 gap-5 mx-auto container">
         <Astronav closeOnClick>
-      <div class="flex w-full lg:w-auto justify-between">
-            <a class="flex items-center" href="/"><Image src={Logo} alt="Rubble Logo" width=40 />&nbsp; Rubble Systems Ltd</a>
+          <div class="flex w-full lg:w-auto justify-between">
+            <a class="flex items-center" href="/"
+              ><Image src={Logo} alt="Rubble Logo" width="40" />&nbsp; Rubble
+              Systems Ltd</a
+            >
             <div class="block lg:hidden">
               <MenuIcon class="w-4 h-4 text-gray-800" />
             </div>
           </div>
           <MenuItems class="hidden lg:flex">
-            <ul class="flex flex-col lg:flex-row lg:gap-5 justify-between items-center">
+            <ul
+              class="flex flex-col lg:flex-row lg:gap-5 justify-between items-center"
+            >
               <li>
                 <a href="/">Home</a>
               </li>
@@ -242,7 +248,7 @@ import {
                   </DropdownItems>
                 </Dropdown>
                 <li>
-                  <a href="#">Pricing</a>
+                  <a href="/shop">Shop</a>
                 </li>
                 <li>
                   <a href="/contact">Contact</a>
@@ -254,7 +260,7 @@ import {
       </header>
     </StickyHeader>
     <main class="container mx-auto p-5">
-      <slot/>
+      <slot />
     </main>
   </body>
 </html>

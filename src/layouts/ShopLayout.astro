@@ -1,0 +1,22 @@
+---
+import "../styles/global.css";
+import { Image } from "astro:assets";
+import Logo from "../images/LogoNoBorder100.png";
+
+import { SnipcartSetup } from "@lloydjatkinson/astro-snipcart/astro";
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <SnipcartSetup />
+  </head>
+  <body>
+    
+    <main class="container mx-auto p-5">
+      <slot />
+    </main>
+  </body>
+</html>

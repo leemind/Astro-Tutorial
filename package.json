@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@lloydjatkinson/astro-snipcart": "^0.3.0",
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.11.1",
     "astro-navbar": "^2.4.0",
